@@ -6,7 +6,7 @@ def pings(addr, num):
     i = 0
     while i < num:
         print(subprocess.check_output(["ping", "-c", "1", addr]))
-        i = i+1
+        i = i + 1
 
 
 def syntax():
@@ -33,8 +33,7 @@ def read_urls(some_file, number, result):
 
 def address(addr):
     i = 0
-    address = read_urls(addr, count_lines(addr), [])
-    return address[i]
+    return(read_urls(addr, count_lines(addr), [])[i])
 
 
 def main():
