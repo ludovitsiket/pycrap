@@ -33,8 +33,7 @@ def read_urls(some_file, number, result):
 
 def address(addr):
     i = 0
-    address = read_urls(addr, count_lines(addr), [])
-    return address[i]
+    return(read_urls(addr, count_lines(addr), [])[i])
 
 
 def main():
